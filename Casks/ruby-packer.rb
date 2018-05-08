@@ -6,5 +6,7 @@ cask 'ruby-packer' do
   name 'rubyc'
   homepage 'https://github.com/pmq20/ruby-packer'
 
-  binary 'rubyc-v0.4.0-darwin-x64', target: 'rubyc'
+  depends_on formula: 'squashfs'
+
+  binary 'ruby-packer--0.4.0', target: 'rubyc'
 end
